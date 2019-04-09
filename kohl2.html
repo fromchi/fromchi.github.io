@@ -8,26 +8,43 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
-footer {
-      background-color: #555;
-      color: white;
-      padding: 60px;
-    }
  .btn-default {
-      background: #000;
-      color: #fff;
+	background: #fff;
+	color: #000;
+      
    }
-  .btn-default:hover {
-      background: #fff;
+  .btn:hover {
+     background: #D3D3D3;
       color: #000;
    }
+.btn {
+	background: #fff;
+	color: #000;
+      
+   }
+  .btn-default:hover {
+     background: #D3D3D3;
+      color: #000;
+   }
+.footer {
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   width: 40%;
+   background-color: white;
+   color: black;
+   text-align: right;
+  /* border: 2px solid black;*/
+   padding: 10px;
+}
 </style>
 <script>
 function relocate_home()
 {
-     location.href ="kohl3.html";
+     location.href ="http://csserver/~irenief/kohl3";
 } 
 </script>
 <body>
@@ -37,31 +54,42 @@ function relocate_home()
 <div class="container">
   <div class="row">
     <div class="col-sm-6">
-  <img src="mens shirt.png" class="img-thumbnail" alt="Incredibles Shirt Mens" width="304" height="236"> 
+  <img src="mens shirt.jpeg" class="img-responsive" alt="Incredibles Shirt Mens" width="304" height="236"> 
 </div>
-<div class="container">
+<div class="footer"style="background-image: linear-gradient(to right,#95BB35, #6AC6C3 );">
+
   <div class="row">
     <div class="col-sm-6">
-  <h1 class="text-center">How is this price?</h1>
+  <h1 class="text-center"><button id="myButton" button type="button" class="btn btn" onclick=" relocate_home()"><p align="right">Skip</p></button>
 <div class="container">
+<div class="row">
+    <div class="col-sm-6">
+  <h1 class = "text- right">Is this price reasonable?</h1>
+<div class="container">
+
   <div class="row">
     <div class="col-sm-2">
-      <h1 class="text-center"><button id="myButton" button type="button" class="btn btn-default" onclick=" relocate_home()"><i class='fas fa-dollar-sign'></i></button>
+      <h1 class="text-center"><button id="myButton" button type="button" class="btn btn-default" onclick=" relocate_home()"><i class="fa fa-frown-o"style="font-size:48px;color:green"></i></button>
       
     </div>
    <div class="container">
   <div class="row">
     <div class="col-sm-2">
-      <h1 class="text-center"><button id="myButton" button type="button" class="btn btn-default" onclick=" relocate_home()"><i class='fas fa-dollar-sign'></i><i class='fas fa-dollar-sign'></i></button>
+      <h1 class="text-center"><button id="myButton" button type="button" class="btn btn-default" onclick=" relocate_home()"><i class="fa fa-meh-o"style="font-size:48px;color:green"></i></button>
       
     </div>
 <div class="container">
   <div class="row">
     <div class="col-sm-2">
-      <h1 class="text-center"><button id="myButton" button type="button" class="btn btn-default" onclick=" relocate_home()"><i class='fas fa-dollar-sign'></i><i class='fas fa-dollar-sign'></i><i class='fas fa-dollar-sign'></i></button>
+      <h1 class="text-center"><button id="myButton" button type="button" class="btn btn-default" onclick=" relocate_home()"><i class="fa fa-smile-o"style="font-size:48px;color:green"></i></button>
       
     </div>
 </div>
+  
+
+
+</div>
+
 </div>
 </div>
 <p id="demo"></p>
