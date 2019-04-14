@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<style>
+	<head>
+		<title>Bootstrap Example</title>
+		<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+					<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+					<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+						<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+						</head>
+						<style>
+.checked {
+  color: #95BB35;
+}
  .btn-default {
 	background: #fff;
 	color: #000;
@@ -26,72 +31,133 @@
       
    }
   .btn-default:hover {
-     background: #D3D3D3;
-      color: #000;
+     background: black;
+      color: white;
    }
 .footer {
    position: fixed;
    right: 0;
    bottom: 0;
-   width: 40%;
+   width: 60%;
    background-color: white;
    color: black;
    text-align: right;
   /* border: 2px solid black;*/
    padding: 10px;
 }
-</style>
-<script>
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+}
+
+
+
+
+
+
+							<body>
+							</style>
+							<script>
 function relocate_home()
 {
-     location.href ="kohl3";
+     location.href ="kohl3.html";
 } 
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 </script>
-<body>
-<div class="jumbotron text-center" style="background-image: linear-gradient(to right,#95BB35, #6AC6C3 );">
-  <h1><font color = "white">$12.99</font></h1>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-sm-6">
-  <img src="mens shirt.jpeg" class="img-responsive" alt="Incredibles Shirt Mens" width="304" height="236"> 
-</div>
-<div class="footer"style="background-image: linear-gradient(to right,#95BB35, #6AC6C3 );">
-
-  <div class="row">
-    <div class="col-sm-6">
-  <h1 class="text-center"><button id="myButton" button type="button" class="btn btn" onclick=" relocate_home()"><p align="right">Skip</p></button>
-<div class="container">
-<div class="row">
-    <div class="col-sm-6">
-  <h1 class = "text- right">Is this price reasonable?</h1>
-<div class="container">
-
-  <div class="row">
-    <div class="col-sm-2">
-      <h1 class="text-center"><button id="myButton" button type="button" class="btn btn-default" onclick=" relocate_home()"><i class="fa fa-frown-o"style="font-size:48px;color:green"></i></button>
-      
-    </div>
-   <div class="container">
-  <div class="row">
-    <div class="col-sm-2">
-      <h1 class="text-center"><button id="myButton" button type="button" class="btn btn-default" onclick=" relocate_home()"><i class="fa fa-meh-o"style="font-size:48px;color:green"></i></button>
-      
-    </div>
-<div class="container">
-  <div class="row">
-    <div class="col-sm-2">
-      <h1 class="text-center"><button id="myButton" button type="button" class="btn btn-default" onclick=" relocate_home()"><i class="fa fa-smile-o"style="font-size:48px;color:green"></i></button>
-      
-    </div>
-</div>
+							<div class="rounded float-left" style="background-image: linear-gradient(to right,black, black );">
+								<img src="fflash.png" class="img-thumbnail" alt="Incredibles Shirt Mens" class="left" width="100" height="70">
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<h4>
+									<b>RED INCREDIBLES SHIRT</b>
+								</h4>
+								<img src="mens shirt.jpeg" class="img-thumbnail" alt="Incredibles Shirt Mens" width="304" height="236">
+									<div class="card">
+										<div class="card-header">
+											<div class="card text-primary border-primary" style="max-width: 20rem;">
+												<font color = "white">the</font>
+											</div>
+											<div class="card-body" div class="w3-container">
+												<h3 class="card-title">Is this price reasonable?</h3>
+												<p class="card-text"></p>
+												<div class="btn-group" role="group" aria-label="Basic example">
+													<button type="button" button onclick="relocate_home()" class="btn btn-secondary">
+														<i style="font-size:24px" class="fa"> &#xf119;</i>
+													</button>
+													<button type="button" button onclick="relocate_home()" class="btn btn-secondary">
+														<i style='font-size:24px' class='far'>&#xf11a;</i>
+													</button>
+													<button type="button" button onclick="relocate_home()" class="btn btn-secondary">
+														<i style="font-size:24px" class="fa">&#xf118;</i>
+													</button>
+												</button>
+												<button type="button" button onclick="relocate_home()" class="btn btn-secondary"><p><font size = "2">Skip</p></font>
+													
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4" style="background-color:white;">
+								<font color = "red">
+									<h2> SALE</h2>
+									<h1>$12.99 </h1>
+									<font color = "white">
+										<h5>h</h5>
+										<font color = "black">
+											<h4>Original $17.99</h4>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star"></span>
+											<h5>4.0 (167) 
+												<button type="buttons" class="btn btn-link">Reviews</button>
+											</h5>
+											<font color = "white">
+												<h5>Size: 16-34/35</h5>
+												<font color = "black">
+													<h5>Size: 16-34/35
+														<h5>
+															<button type="button" class="btn btn-default">16.5-34/35</button>
+															<button type="button" class="btn btn-default">16-32/33</button>
+															<button type="button" class="btn btn-default">16-34/35</button>
+														</div>
+													</div>
+													<div class="col-sm-4">
+														<div class="card" style="width: 18rem;">
   
-
-
+  <div class="card-body">
+<font color = "white"><h5 class="card-title"><center>Cards<center></h5></font>
+    <h5 class="card-title"><center>Savings & Gift Cards<center></h5>
+    <font color = "white"><h5 class="card-title"><center>Cards<center></h5></font>
+<img class="card-img-top" img src="kohlscash.png" class="img-thumbnail" alt="cashback" width="300" height="200">
+<font color = "white"><h5 class="card-title"><center>Cards<center></h5></font>
+<img class="card-img-top" img src="cashback.png" class="img-thumbnail" alt="cashback" width="300" height="200">
+<p><font color = "white">Kohls Cash </p></font>
+  
+ 
+</div>
+   
+  </div>
 </div>
 
 </div>
-</div>
-<p id="demo"></p>
-</body>
-</html>
+																</div>
+															</div>
+														</div>
+													</div>
+													<p id="demo"></p>
+												</body>
+											</html>
