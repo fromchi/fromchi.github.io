@@ -39,7 +39,21 @@ span.glyphicon {
 
 .button > input:hover ~ label
 { color: #ffdb4d ;  } /* Set yellow color when star hover */
+.rating-list li {
+  float: right;
+  color: #ddd;
+  padding: 10px 5px;
+}
+/**/
+.starrating risingstar span:hover,
+.starrating risingstar span:hover ~ li {
+  color: #ffd700;
+}
 
+.starrating risingstar {
+  display: inline-block;
+  list-style: none;
+}/**/
 </style>
 <script>
 function relocate_home()
