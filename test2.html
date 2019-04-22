@@ -1,76 +1,58 @@
-
-   
-if ((($_SERVER["REQUEST_METHOD"] == "POST") && (isset($_SERVER["HTTP_REFERER"]) && strpos(urldecode($_SERVER["HTTP_REFERER"]), urldecode($_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"])) > 0) && isset($_POST))) {  
-    // echo the values from the select facet page  
-    echo "You have selected " . $_POST['selectedfaucet']. "<br";  
-}  
-?>  
-<!doctype html>  
-<html>  
-<head>  
-<meta charset="utf-8">  
-<title>Untitled Document</title>  
-</head>  
-  
-<body>  
-<form  method="post" name="form1" id="form1">  
-    <p>  
-        <input type="radio" name="selectedfaucet" id="radio" value="outdoor">  
-        <label for="radio">Outdoor</label>  
-    </p>  
-    <p>  
-        <input type="radio" name="selectedfaucet" id="" value="indoors">  
-        <label for="radio2">Indoors</label>  
-    </p>  
-</form>  
-<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>  
-<script>  
- $(document).ready(function() {   
-   $('input[name=selectedfaucet]').change(function(){  
-        $('form').submit();  
-   });  
-  });  
-</script>  
-
+<html>
+<head>
 <style>
+.rating > span:hover:before {
+   content: "\2605";
+   position: absolute;
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
-
 fieldset, label { margin: 0; padding: 0; }
 body{ margin: 20px; }
 h1 { font-size: 1.5em; margin: 10px; }
-
 /****** Style Star Rating Widget *****/
-
 .rating { 
   border: none;
   float: left;
 }
-
+.rating > span {
 .rating > input { display: none; } 
 .rating > label:before { 
   margin: 5px;
   font-size: 1.25em;
   font-family: FontAwesome;
   display: inline-block;
+  position: relative;
+  width: 1.1em;
   content: "\f005";
 }
-
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
 .rating > .half:before { 
   content: "\f089";
   position: absolute;
 }
-
 .rating > label { 
   color: #ddd; 
  float: right; 
 }
-
 /***** CSS Magic to Highlight Stars on Hover *****/
-
 .rating > input:checked ~ label, /* show gold star when clicked */
 .rating:not(:checked) > label:hover, /* hover current star */
 .rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
-
 .rating > input:checked + label:hover, /* hover current star when changing rating */
 .rating > input:checked ~ label:hover,
 .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
@@ -78,6 +60,13 @@ h1 { font-size: 1.5em; margin: 10px; }
 </style>
 </head>
 <body>
+<div class="rating">
+<span><button type="buttons" button onclick="relocate_home();" class="btn btn-link"><span class="glyphicon glyphicon-star"></span></button>
+<button type="buttons" button onclick="relocate_home();" class="btn btn-link"><span class="glyphicon glyphicon-star"></span></button>
+<button type="buttons" button onclick="relocate_home();" class="btn btn-link"><span class="glyphicon glyphicon-star"></span></button>
+<button type="buttons" button onclick="relocate_home();" class="btn btn-link"><span class="glyphicon glyphicon-star"></span></button>
+<button type="buttons" button onclick="relocate_home();" class="btn btn-link"><span class="glyphicon glyphicon-star"></span>
+</div>
 <h1>Pure CSS Star Rating Widget</h1>
 <fieldset class="rating">
     <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
@@ -94,4 +83,4 @@ h1 { font-size: 1.5em; margin: 10px; }
 
 
 </body>
-</html>
+   </html>
