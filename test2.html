@@ -47,7 +47,11 @@ h1 { font-size: 1.5em; margin: 10px; }
 .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
 .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } </style>
   <script>
-</script><body><h1>Pure CSS Star Rating Widget</h1>
+	  function redirectfunc()
+{
+     location.href = "index.html";
+} 
+</script><body>
 <fieldset class="rating">
     <input type="radio" id="star5" onclick="redirectfunc();"name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
     <input type="radio" id="star4half" onclick="redirectfunc();" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
