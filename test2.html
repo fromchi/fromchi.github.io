@@ -51,8 +51,15 @@ h1 { font-size: 1.5em; margin: 10px; }
 {
      location.href = "index.html";
 } 
-</script><body>
-<h1>Pure</h1>
+	  setTimeout(function(){window.location.href="index.html"},10000);
+            document.write("You will be redirected to main page in 10 sec.");
+ 
+</script>
+<body>
+<div class="jumbotron text-center" style="background-image: linear-gradient(to right,#95BB35, #6AC6C3 );">
+  <h1><font color = "white">Please Rate Your In-Store Experience!</font></h1>
+</div>
+
 <fieldset class="rating d-flex justify-content-center flex-row-reverse">
     <input type="radio" id="star5" onclick= "redirectfunc()" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
     <input type="radio" id="star4half" onclick= "redirectfunc()" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
